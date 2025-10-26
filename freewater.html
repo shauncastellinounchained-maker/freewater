@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FreeWater — Clean water, ad-supported</title>
+  <meta name="description" content="FreeWater — Free drinking water powered by ads printed on bottles. College assignment demo site." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0ea5a4;--muted:#6b7280;--card:#ffffff;--bg:#f7fafc}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:28px 0}
+    .hero-inner{background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent);padding:28px;border-radius:14px}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border:none;border-radius:10px;font-weight:600;text-decoration:none}
+    .btn.ghost{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .grid-products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:18px}
+    .product{padding:14px;border-radius:8px;background:linear-gradient(180deg,#fff,#fbfdff);text-align:center}
+    .product h4{margin:8px 0 6px}
+    footer{margin-top:28px;padding:18px 0;border-top:1px solid #e6eef5;color:var(--muted)}
+    /* assignments section */
+    .assignments{display:flex;flex-direction:column;gap:12px}
+    .drive-btn{display:inline-block;padding:10px 12px;border-radius:10px;background:#fff;border:1px solid #e6eef5;text-decoration:none;color:#0f172a;font-weight:600}
+    /* responsive */
+    @media(min-width:768px){
+      .hero{grid-template-columns:1fr 420px}
+      h1{font-size:38px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FW</div>
+        <div>
+          <div style="font-weight:700">FreeWater</div>
+          <div style="font-size:12px;color:var(--muted);">Free water — ads printed on bottles</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#products">Products</a>
+        <a href="#assignments">Assignments</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner card">
+          <h1>Free drinking water for everyone — supported by ads printed on bottles</h1>
+          <p class="lead">We provide free, clean drinking water at campuses and public spots. Brands sponsor bottles by printing ads on them — that revenue keeps water free.</p>
+          <div class="cta-row">
+            <a class="btn" href="#assignments">See Assignment Files</a>
+            <a class="btn ghost" href="#how">Learn how</a>
+          </div>
+
+          <div class="features">
+            <div class="card">
+              <h3 style="margin:0 0 8px">Campus-first</h3>
+              <p style="margin:0;color:var(--muted)">Installed dispensers and kiosks near hostels & canteens.</p>
+            </div>
+            <div class="card">
+              <h3 style="margin:0 0 8px">Ad-supported</h3>
+              <p style="margin:0;color:var(--muted)">Local brands print small ads on recyclable bottles.</p>
+            </div>
+            <div class="card">
+              <h3 style="margin:0 0 8px">Sustainable</h3>
+              <p style="margin:0;color:var(--muted)">We use refillable dispensers and recycle used bottles.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin-top:0">Our Bottles</h3>
+            <div class="grid-products">
+              <div class="product">
+                <div style="font-size:42px;opacity:0.9">💧</div>
+                <h4>Ad Bottle — Campus</h4>
+                <div style="color:var(--muted);font-size:13px">Small ad panel — school friendly</div>
+              </div>
+              <div class="product">
+                <div style="font-size:42px;opacity:0.9">🌿</div>
+                <h4>Eco Refill</h4>
+                <div style="color:var(--muted);font-size:13px">Refill stations + return scheme</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="how" style="margin-top:18px">
+        <div class="card">
+          <h2 style="margin:0 0 8px">How it works</h2>
+          <ol style="margin-top:8px;color:var(--muted)">
+            <li>Brands buy ad space printed on PE-recyclable bottles.</li>
+            <li>Bottles are filled at our certified facilities and distributed to campuses.</li>
+            <li>Ads fund production & dispenser maintenance — water stays free for students.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="products" style="margin-top:18px">
+        <h2>Where we operate</h2>
+        <div class="grid-products">
+          <div class="card product"><h4>College A</h4><div style="color:var(--muted)">Hostels & Canteens</div></div>
+          <div class="card product"><h4>College B</h4><div style="color:var(--muted)">Library Block</div></div>
+          <div class="card product"><h4>Community Zone</h4><div style="color:var(--muted)">City Park Kiosk</div></div>
+        </div>
+      </section>
+
+      <section id="assignments" style="margin-top:22px">
+        <div class="card">
+          <h2 style="margin:0 0 8px">College assignment files</h2>
+          <p style="margin:0 0 12px;color:var(--muted)">Below are the Google Drive folders for your semester work. These open in a new tab.</p>
+          <div class="assignments">
+            <a class="drive-btn" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1PFh4J_vO4nwzjBVfQjxhdq8BsT0n-XXl?usp=drive_link">Assignments collection (Google Drive)</a>
+            <a class="drive-btn" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1BEBvdtVAGMba7rek9mZ_ckaD7wrfCXWh?usp=drive_link">Experiments collection (Google Drive)</a>
+          </div>
+
+          <p style="margin-top:12px;color:var(--muted);font-size:13px">Note: Make sure these Drive folders are shared with anyone who needs access (or set to link‑viewable) so classmates and graders can open them.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>FreeWater</strong> — Free water powered by ads. <br/>
+          Built for college assignment demo.
+        </div>
+        <div style="color:var(--muted);font-size:13px">© Shaun Castellino — Roll No 313 &nbsp;•&nbsp; Partner: Priti Chawan Roll No 320</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small JS for anchor smooth scroll and mobile fallback
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
